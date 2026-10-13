@@ -24,16 +24,17 @@ DNS over HTTPS (DoH) sends DNS queries inside encrypted HTTPS connections. This 
 Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 
 ## Cybersecurity
-Phishing-resistant authentication prevents authentication secrets or valid authentication outputs from being disclosed to an impostor website without relying on the user's vigilance. NIST describes this protection through cryptographic binding between the authentication process and the legitimate verifier. FIDO2/WebAuthn passkeys and security keys, as well as PIV smart cards used with appropriate authentication protocols, can provide phishing-resistant authentication. SMS codes, email codes, and manually entered authenticator-app codes are not phishing-resistant because they can be relayed to an impostor. Push approvals are also not considered phishing-resistant under NIST's classification of ordinary push-notification authentication.
+An authentication method is phishing-resistant when it does not rely on the user's vigilance to avoid giving secrets to a fake site. NIST calls this verifier impersonation resistance: the login is cryptographically bound to the real site, so a fake site gets nothing useful. FIDO2/WebAuthn security keys and passkeys qualify, as do PIV smart cards. SMS codes, email codes, authenticator-app codes and push approvals do not, because users can be tricked into sharing or approving them.
 
 Resource: NIST SP 800-63-4 - Digital Identity Guidelines - https://csrc.nist.gov/pubs/sp/800/63/4/final
 
 ## Data
-Oman's Personal Data Protection Law (Royal Decree 6/2022) establishes requirements for processing personal data, including obtaining and documenting consent where required, unless an applicable legal exception applies. Controllers must implement appropriate controls for data processing and security, notify the relevant authorities and affected individuals of personal data breaches in accordance with the law, designate a data protection officer as required, and follow applicable rules for transferring personal data outside Oman. The law also provides specific rights relating to personal data, including requesting erasure subject to applicable exceptions. Article 3 excludes certain types of processing, so the law's applicability must be assessed in context.
+Under Oman's Personal Data Protection Law (Royal Decree 6/2022), a controller must obtain the data subject's explicit consent, and prove it, unless an exception applies. It must set risk controls, notify the ministry and the data subject of breaches, appoint a data protection officer, erase data when its purpose ends, and follow rules for transfers outside Oman. Article 3 excludes some state processing, so the authority's scope must be checked.
 
 Resource: Royal Decree 6/2022 - Issuing the Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
 A common misconception in software engineering is that OAuth 2.0 is a login protocol, so receiving an access token proves the user's identity. However, OAuth 2.0 is an authorization framework that allows an application to access protected resources; an access token is not, by itself, proof of the user's identity. OpenID Connect (OIDC) adds an identity layer on top of OAuth 2.0 and uses an ID token to convey authentication information about the user. The Introduction of OpenID Connect Core 1.0 supports this by describing OIDC as a simple identity layer on top of OAuth 2.0. This distinction matters when designing secure login systems because authorization and authentication serve different purposes.
+
 ## Open Question
 I would like to learn how an app checks that an ID token is real, so it can trust that the login belongs to the right user.
