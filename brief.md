@@ -9,7 +9,7 @@ OAuth 2.0 is an authorization framework. It lets an app get limited access to a 
 Resource: OpenID Connect Core 1.0 - https://openid.net/specs/openid-connect-core-1_0.html
 
 ## AI
-Using the NIST AI Risk Management Framework (AI RMF 1.0), the authority should govern, map, measure and manage risks before launch and throughout the system's lifecycle. Key risks include inaccurate results, such as false positives that lock real citizens out or false negatives that let attackers in, and harmful bias against some groups. Other risks include weak security and resilience, privacy of login data, and lack of explainability. Human review and ongoing monitoring of flagged logins should be in place.
+Using the NIST AI Risk Management Framework (AI RMF 1.0), the authority should govern, map, measure and manage risks before launch. Key risks include inaccurate results, such as false positives that lock real citizens out or false negatives that let attackers in, and harmful bias against some groups. Other risks include weak security and resilience, privacy of login data, and lack of explainability. Human review and ongoing monitoring of flagged logins should be in place.
 
 Resource: Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1 - https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
 
