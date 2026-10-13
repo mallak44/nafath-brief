@@ -35,5 +35,6 @@ Oman's Personal Data Protection Law (Royal Decree 6/2022) establishes requiremen
 Resource: Royal Decree 6/2022 - Issuing the Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
-
+A common misconception in software engineering is that OAuth 2.0 is a login protocol, so receiving an access token proves the user's identity. However, OAuth 2.0 is an authorization framework that allows an application to access protected resources; an access token is not, by itself, proof of the user's identity. OpenID Connect (OIDC) adds an identity layer on top of OAuth 2.0 and uses an ID token to convey authentication information about the user. The Introduction of OpenID Connect Core 1.0 supports this by describing OIDC as a simple identity layer on top of OAuth 2.0. This distinction matters when designing secure login systems because authorization and authentication serve different purposes.
 ## Open Question
+I would like to learn how an app checks that an ID token is real, so it can trust that the login belongs to the right user.
