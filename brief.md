@@ -20,10 +20,19 @@ Android distinguishes between install-time and runtime permissions. Normal insta
 Resource: Permissions on Android - https://developer.android.com/guide/topics/permissions/overview
 
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries inside encrypted HTTPS connections. This helps prevent parties on the network path, such as public Wi-Fi operators, from reading or modifying DNS queries in transit. However, the DoH resolver can still see the queries. DoH also does not hide the IP addresses a user connects to or secure the website or login process by itself, so HTTPS/TLS is still needed to protect application communications.
+
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 
 ## Cybersecurity
+Phishing-resistant authentication prevents authentication secrets or valid authentication outputs from being disclosed to an impostor website without relying on the user's vigilance. NIST describes this protection through cryptographic binding between the authentication process and the legitimate verifier. FIDO2/WebAuthn passkeys and security keys, as well as PIV smart cards used with appropriate authentication protocols, can provide phishing-resistant authentication. SMS codes, email codes, and manually entered authenticator-app codes are not phishing-resistant because they can be relayed to an impostor. Push approvals are also not considered phishing-resistant under NIST's classification of ordinary push-notification authentication.
+
+Resource: NIST SP 800-63-4 - Digital Identity Guidelines - https://csrc.nist.gov/pubs/sp/800/63/4/final
 
 ## Data
+Oman's Personal Data Protection Law (Royal Decree 6/2022) establishes requirements for processing personal data, including obtaining and documenting consent where required, unless an applicable legal exception applies. Controllers must implement appropriate controls for data processing and security, notify the relevant authorities and affected individuals of personal data breaches in accordance with the law, designate a data protection officer as required, and follow applicable rules for transferring personal data outside Oman. The law also provides specific rights relating to personal data, including requesting erasure subject to applicable exceptions. Article 3 excludes certain types of processing, so the law's applicability must be assessed in context.
+
+Resource: Royal Decree 6/2022 - Issuing the Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
 
